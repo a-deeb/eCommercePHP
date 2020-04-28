@@ -1,0 +1,270 @@
+/*-----头部----*/
+.header{
+	background: #ff710a;
+	padding: 0.8em 0;
+	position:relative;
+}
+.top-bar{
+	padding: 15px 0px; background: #ffffff;
+}
+.logo{
+	width:50%;
+	float:left;
+	text-align:left;
+}
+.header-right{
+	width:50%;
+	float:right;
+	text-align:right;
+}
+/*----导航----*/
+.topnav ul li a{
+	color: #fff;
+	padding: 0.5em 1em;
+	font-size: 0.96em;
+	font-weight:300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 0 0 0 0.5em;
+}
+.topnav ul li a span{
+	height: 20px;
+	width: 1px;
+	display: inline-block;
+	background: #C2C2C2;
+	position: absolute;
+	top: 29%;
+	right: 0;
+}
+.topnav ul li.active a,
+.topnav ul li a:hover{
+	color: #FFFFFF;
+	background: #d75c03;
+}
+
+/* 导航适配 */
+.topnav:before,
+.topnav:after {
+    content: " ";
+    display: table;
+}
+.topnav:after {
+    clear: both;
+}
+nav {
+	position: relative;
+
+}
+nav ul {
+	padding: 0;
+	
+	margin:0;
+}
+nav li {
+	display: inline;
+	float: left;
+	position:relative;
+}
+nav a {
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:hover{
+	text-decoration:none;
+	color:#00A2C1;
+}
+nav a#pull {
+	display: none;
+}/* 导航适配 */
+.topnav:before,
+.topnav:after {
+    content: " ";
+    display: table;
+}
+.topnav:after {
+    clear: both;
+}
+nav {
+	position: relative;
+}
+nav ul {
+	padding: 0;
+}
+nav li {
+	display: inline;
+	float: left;
+	position:relative;
+}
+nav a {
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+}
+nav a:hover{
+	text-decoration:none;
+	color:#00A2C1;
+}
+nav a#pull {
+	display: none;
+}
+.search {
+    top: 7%;
+    right: 1%;
+    z-index: 9999;
+}
+.search input[type="search"]{
+	    outline: none;
+    padding: 8px 10px;
+    width: 77%;
+    font-size: 15px;
+    color: #888;
+    background: #FFFFFF;
+    float: left;
+    border: none;
+}
+.search input[type="submit"]{
+	outline: none;
+    padding:7px 0;
+    width: 23%;
+    display: inline-block;
+    color: #fff;
+    background:url(../images/search.png) no-repeat 11px 7px #f6df20;
+    border: none;
+}
+.footer {
+	text-align: center;
+	padding: 30px 0;
+	border-top: 1px solid #e5e5e5;
+	background-color: #222222;
+	margin:0;
+}
+.footer p {
+	margin-bottom: 0;
+	color: #777;
+	margin-bottom: 3px;
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 26px;
+	right: 3%;
+	overflow: hidden;
+	width:50px;
+	height:50px;
+	border: none;
+	text-indent: 100%;
+	background: url("../images/top_move.png") no-repeat 0px 0px;
+}
+/*屏幕600px和以下*/
+@media screen and (max-width: 768px) {
+	.logo {
+    width: 100%;
+}
+	nav { 
+  		height: auto;
+  		float:none;
+  	}
+  	nav ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	nav li {
+  		width: 100%;
+  		position: relative;
+  	}
+  	nav li a {
+		border-bottom: 1px solid #eee;
+	}
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+}
+/*屏幕500px和以下*/
+@media only screen and (max-width : 768px) {
+	.logo {
+    width: 100%;
+}
+	nav {
+		border-bottom: 0;
+		float:none;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+		margin:0;
+		background: #fff;
+		margin-top: 1em;
+	}
+	nav a#pull {
+		display: block;
+		position: relative;
+		color: #F26D7D;
+		text-align: right;
+		position: absolute;
+		top:-3px;
+	}
+	nav a#pull:after {
+		content:"";
+		background: url('nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	nav a#pull img{
+		margin-right:2%;
+	}
+	.topnav ul li a {
+		color: #2C3E50;
+		padding: 0em 0;
+	}
+}
+/*适合手机的*/
+@media only screen and (max-width : 320px) {
+	.logo {
+    width: 100%;
+	}
+	nav {
+		float:none;
+	}
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	nav li a {
+		border-bottom: 1px solid #eee;
+	}
+}
+
+@media (max-width:1024px){
+.topnav ul li a {
+	margin:0;
+}
+}
+@media (max-width:800px){
+.topnav ul li a {
+	padding: 0.5em 0.7em;
+	font-size: 0.85em;
+}
+.logo a {
+	margin-top:0;
+}
+}
+.banner img {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    border: 0;
+    width: 100%;
+}

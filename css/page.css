@@ -1,0 +1,11 @@
+.panel-default > .panel-heading {
+    color: #ffffff;
+    background-color: #ff710a;
+    border-color: #ddd;
+}
+.pages{
+	clear:both;
+	margin:auto;
+	text-align:center;
+	width:100%;
+	}
